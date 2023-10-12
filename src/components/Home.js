@@ -74,18 +74,23 @@ const Home = () => {
      <span className='text-gray-200 hover:cursor-pointer hover:text-orange-400 hover:border-b-2 hover:transition-all hover:delay-75 hover:border-orange-400  text-[12px]'>BCA</span>
     </div>
     <div className='absolute top-0 left-0 w-[100%] z-1'>
-         <img className='w-full h-full object-cover relative' src="https://images.collegedunia.com/public/asset/img/homepage/banner/Indian1642232971.webp?mode=stretch" alt="banner"/>
-         <div className='absolute top-[50%]  w-[100%]    z-20'>
+         <img className='w-full h-screen object-cover relative' src="https://images.collegedunia.com/public/asset/img/homepage/banner/Indian1642232971.webp?mode=stretch" alt="banner"/>
+         <div className='absolute top-[50%]  w-[100%] flex-col   z-20'>
          
          <h1 className='text-center text-white font-bold text-[30px]'>Find Over 25000+ C in India</h1>
-         <div  className='w-full flex justify-center my-4'>
-             <div className='flex bg-white justify-center w-[60%]  mx-5 items-center m-3  shadow-sm mt-1 rounded-md'>
+         <div  className='w-full flex justify-center my-4 relative'>
+   
+            <div className='flex bg-white justify-center w-[60%]  mx-5 items-center m-3  shadow-sm mt-1 rounded-md'>
              <CiSearch size={20} className='ml-4'/>
-             <input type="text" className='ml-3 w-full h-[100%] focus:outline-none ' placeholder='Search for Collage Exams and More ..'/>
-            
-       <button className='bg-orange-400 p-3'>Search</button>
-       </div>
-       </div>
+             <input type="text" className='ml-3 w-full h-[100%] focus:outline-none ' placeholder='Search for Collage Exams and More ..'/>  
+        <button className='bg-orange-400 p-3'>Search</button>
+             </div>
+             {/* <a className='bg-orange-400 p-2 w-[140px] rounded-md block'>Need Counseling</a> */}
+            </div>
+
+   
+
+      
        </div>
     </div>
   
