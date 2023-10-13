@@ -3,8 +3,8 @@ import { FormControl, InputAdornment, InputLabel, MenuItem, OutlinedInput, Selec
 import React from 'react'
 import { ImCross } from 'react-icons/im';
 
-const InputSelectCity = () => {
-    const [personName, setPersonName] = React.useState([]);
+const InputSelectCity = ({onBlur,onChange,value}) => {
+    const [personName, setPersonName] = React.useState("");
     const theme = useTheme();
     const names = [
         'Oliver Hansen',
@@ -39,7 +39,10 @@ const InputSelectCity = () => {
     <Select
       labelId="demo-multiple-city-label"
       id="demo-single-city"
-      value={personName}
+      value={value}
+      onChange={onChange}
+      onBlur={onBlur}
+      defaultValue={value}
     //   onChange={handleChange}
       input={<OutlinedInput label="City You live In"   endAdornment={
         <InputAdornment position="end">
